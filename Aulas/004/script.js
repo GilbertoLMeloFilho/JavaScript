@@ -41,7 +41,7 @@ console.log(Times.find(function(Time){
 Times.push({Nome: 'Palmeiras', Posição: '19°'})
 console.log(Times)
 
-//Arrow Functions
+//Arrow Functions => metodo para simplificar funções, o parametro da função vem antes da "flecha" e o return depois
 
 console.log(Times.find(Time => Time.Nome === 'Flamengo')); //Metodo simplificado para achar um objeto no array
 
