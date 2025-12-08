@@ -4,19 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom</title>
+    <style>
+        .texto_oculto{
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <h1 class="titulo" id="PrimTit"> Aprofundando em DOM</h1>
     <h2 class="titulo"></h2>
     <h2>Cronometro</h2>
     <p id="cron"></p>
+
+    <h1 style="color: crimson;">getElementsById</h1>
+    <p id="test"></p>
+
+    <h1 style="color: crimson;">getElementsByName</h1>
     <p name="par">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere repudiandae quisquam ad minus odit nam voluptas nihil itaque. Repellat, autem. Quisquam accusamus qui unde consectetur! Unde officia laboriosam suscipit quis!</p>
-    <p name="par">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere repudiandae quisquam ad minus odit nam voluptas nihil itaque. Repellat, autem. Quisquam accusamus qui unde consectetur! Unde officia laboriosam suscipit quis!</p>
-    <form action="script.js">
-        <input type="checkbox" name="check" id="">
-        <input type="checkbox" name="check" id="">
-    </form>
+
+    <h1 style="color: crimson;">getElementsByClassName</h1>
     <p class="classe">Não tenho mais ideia</p>
+
+    <h1 style="color: crimson;">getElementsByTagName</h1>
+    <h3>1</h3>
+    <h3>2</h3>
+    <h3>3</h3>
+
+    <h1 style="color: crimson;">querySelector / querySelectorAll</h1>
+    <h2 id="um" class="primeiro">1</h2>
+    <h2 id="dois" class="segundo">2</h2>
+    <h2 id="tres" class="terceiro">3</h2>
+
+    <p id="quatro" class="primeiro">4</p>
+    <p id="cinco" class="segundo">5</p>
+    <p id="seis" class="terceiro">6</p>
+
+    <div id="sete" class="primeiro">7</div>
+    <div id="oito" class="segundo">8</div>
+    <div id="nove" class="terceiro">9</div>
+
+    <h1 style="color: crimson;">Fomas de escrever</h1>
+    <h2 id="innertext"></h2>
+    <h2 class="texto_oculto">texto oculto innertext</h2>
+    <h2 id="innerHTML"></h2>
+    <h2 class="texto_oculto">texto oculto innerHTML</h2>
+    <h2 id="textContent"></h2>
+    <h2 class="texto_oculto">texto oculto textContent</h2>
+
     <script src="script.js"></script>
 </body>
 </html>
