@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
+    <style>
+        .cclasse{
+            color: blue;
+        }
+    </style>
 </head>
 <body>
     <h1>hasAttribute</h1>
@@ -26,6 +31,30 @@
         <li id="trc">texto removido por removeChild</li>
         <li id="tr">texte removido por remove</li>
     </ul>
+    <h1>appendChild | insentBefore</h1>
+    <ul id="listagem">
+        <li>1</li>
+        <li id="l2">2</li>
+        <li>3</li>
+    </ul>
+    <h1>element.style.PropriedadeCSS</h1>
+    <div id="container" style="height: 100px; width: 100px; background-color: red;" ></div>
+    <h1>ClassList</h1>
+    <ul>
+        <li class="top">ClassList</li>
+        <li id="vendoclass1" class="cclasse">ClassList</li>
+        <li id="vendoclass2" class="cclasse">ClassList</li>
+        <li id="vendoclass4">ClassList</li>
+        <li id="vendoclass5" class="cclasse">ClassList</li>
+    </ul>
+    <form action="script.js" id="meuForm">
+        <input type="text" placeholder="Digite seu nome: " name="nome"> <br>
+        <input type="email" placeholder="Digite seu email: " name="email"> <br>
+        <button id="btn">Enviar</button>
+    </form>
+    <div style="background-color: blue; width: 200px; height: 200px;" id="caixa">
+        <p id="texto">Nada acontecendo...</p>
+    </div>
     <div style="height: 2000px;"> topo</div>
     <footer>
         <button onclick="IrTopo()">Ir para o topo</button>
