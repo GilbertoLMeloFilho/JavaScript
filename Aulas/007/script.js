@@ -30,3 +30,29 @@ console.log(caixa.getBoundingClientRect()) //retorna valores apartir da posiçã
 
                                             */
 
+
+//element.parentElement
+const filho = document.getElementById("ul_filho")
+console.log("element.parentElement: ", filho.parentElement) //retorna o pai do elemento
+
+//element.children | element.childNodes
+const pai = document.getElementById("lista_pai") 
+console.log("element.children: ", pai.children) // retorna o filho de elemento (so elementos) | É um HTMLCollection, não um array real.
+console.log("element.childNodes: ", pai.childNodes) //retorna o filho do elemento (inclui texto, comentários, espaços, quebras de linha)
+
+//element.firstChild | firstElementChild
+console.log("element.firstChild: ", pai.firstChild) //retorna o primeiro filho, nao importando oq é
+console.log("firstElementChild: ", pai.firstElementChild) //retorna o primeiro elemento filho
+
+//element.lastChild | element.lastElementChild
+console.log("element.lastChild: ", pai.lastChild) //retorna o ultimo filho, nao importando oq é
+console.log("element.lastElementChild: ", pai.lastElementChild) //retorna o ultimo elemento filho, nao importando oq é
+
+//element.nextElementSibling | element.previousElementSibling
+console.log("element.nextElementSibling: ",filho.nextElementSibling) //retorna o irmao proximo irmao do elemento ( elemento de mesmo nivel)
+console.log("element.previousElementSibling: ", filho.previousElementSibling) //retorna o irmao antes do elemento
+
+//element.closest("seletor")
+console.log(filho.closest("#avo")) //retorna o elemento dentro da sua arvore (pai, avo, ...) que corresponde ao seletor
+console.log(filho.closest("#bisavo"))
+
